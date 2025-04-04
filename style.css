@@ -168,6 +168,10 @@ h1{
     font-size: 1rem;
 }
 
+.link-project{
+    text-decoration: none !important;
+    color: inherit;
+}
 
 .projects{
     padding: 6rem 2rem;

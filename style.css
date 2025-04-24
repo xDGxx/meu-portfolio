@@ -420,6 +420,26 @@ body {
         animation: flutuar 5s ease-in-out infinite;
     }
 
+    .about-social {
+        margin-top: 20px;
+      }
+      
+      .social-icon {
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        cursor: pointer;
+      }
+      
+      .social-icon:hover {
+        box-shadow: 0 10px 20px rgba(19, 54, 135, 0.7);
+    transform: translateY(-10px) scale(1.03);
+    transition: all 0.5s ease;
+       
+        opacity: 0.8;
+      }
+
 @media screen and (max-width: 600px) {
     .foto {
         width: 180px;

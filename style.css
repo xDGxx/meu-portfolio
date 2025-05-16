@@ -75,14 +75,14 @@ body {
 
 h1{
     font-size: 3.5rem;
-    color: var(--terceira);
+    color: var(--claro);
     font-weight: bold;
     margin: 20px;
 }
 
 .subtittle{
     font-size: 20px;
-    color: var(--claro);
+    color: rgba(226, 232, 242, 0.8);
 }
 
 .cabecalho{
@@ -400,6 +400,7 @@ body {
 }
 /* ================= AJUSTES DE RESPONSIVIDADE GERAL ================= */
 .cabecalho {
+    padding-top: 30px;
     min-height: 100vh;
     display: flex;
     justify-content: center;

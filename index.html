@@ -13,16 +13,21 @@
 <body>
     <div class="particulas"></div>
     <header>
-        <nav class="navegacao">
-            <ul class="menu-nav">
-                <li><a class="menu-link" href="#home">Home</a></li>
-                <li><a class="menu-link" href="#about">Sobre</a></li>
-                <li><a class="menu-link" href="#skills">Skills</a></li>
-                <li><a class="menu-link" href="#projects">Projetos</a></li>
-                <li><a class="menu-link" href="#contact">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navegacao">
+      <div class="menu-toggle" id="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="menu-nav" id="menu-nav">
+        <li><a class="menu-link" href="#home">Home</a></li>
+        <li><a class="menu-link" href="#about">Sobre</a></li>
+        <li><a class="menu-link" href="#skills">Skills</a></li>
+        <li><a class="menu-link" href="#projects">Projetos</a></li>
+        <li><a class="menu-link" href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
     <main id="home" class="cabecalho">
         <img src="img/picture.jpeg" alt="minha foto" class="foto" max-width="350px" height="auto">
@@ -210,9 +215,7 @@
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <script src="script.js"></script>
 
 </body>
 

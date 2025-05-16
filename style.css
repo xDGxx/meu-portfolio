@@ -500,3 +500,86 @@ body {
         transform: translateY(-10px);
     }
 }
+
+/* Esconde o menu toggle no desktop */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  width: 30px;
+  height: 22px;
+  justify-content: center;
+}
+
+.menu-toggle .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Menu desktop padrão */
+.menu-nav {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+/* Responsivo */
+  @media (max-width: 768px) {
+  .menu-nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 160px;
+    background: rgba(2, 16, 36, 0.85); /* vidro com cor azul escuro */
+    border-radius: 16px;
+    padding: 1rem 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* borda suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: opacity 1.5s ease, transform 1s ease; 
+    z-index: 1000;
+  }
+
+  .menu-nav.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  
+  .menu-nav li {
+    margin: 0.8rem 0;
+  }
+  
+  .menu-nav li a {
+    color: #fff;
+    font-weight: 600;
+  }
+}
+  
+  /* Mostra o menu toggle no mobile */
+  .menu-toggle {
+    display: flex;
+  }
+
+
+/* Animação para transformar as barras no X */
+.menu-toggle.active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
